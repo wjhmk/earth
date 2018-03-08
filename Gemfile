@@ -28,7 +28,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-rails'
-
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 
 

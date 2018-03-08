@@ -51,10 +51,10 @@
 				<div class="row">
 					<div class="col-md-3 col-xs-5 col-sm-4 header-logo">
 						<br>
-						<a href="index.html"> 
-							<h1 class="logo">KizuNa <span class="logo-head">Plus</span></h1>
-						</a>
-					</div>
+						<%= link_to(root_path) do %>
+						   <h1 class="logo">KizuNa <span class="logo-head">Plus</span></h1>
+						<% end %>
+				</div>
 
 					<div class="col-md-8 col-md-offset-1 col-xs-7">
 						<nav class="navbar navbar-default">
@@ -74,19 +74,20 @@
 							    <div class="collapse navbar-collapse navbar-def" id="bs-example-navbar-collapse-1">
 							      
 							      	<ul class="nav navbar-nav navbar-right">
-									
-										    <li>
-										      <%= link_to(root_path) do %>
-											   <i class="fa fa-home"></i>ホーム
-											  <% end %>   
-										    </li>
-									  
-									  
-										    <li>
-										       <%= link_to(new_post_path) do %>
-											   <i class="fa fa-bookmark"></i>マイページ
+							      		
+							      		
+									           <li>
+										       <%= link_to(root_path) do %>
+											     <i class="fa fa-bookmark"></i>ホーム
 											   <% end %>
-										    </li>
+										       </li>
+									           
+									  
+										       <li>
+										       <%= link_to(new_post_path) do %>
+											     <i class="fa fa-bookmark"></i>マイページ
+											   <% end %>
+										       </li>
 											
 										
 							      	</ul>
@@ -187,4 +188,6 @@
 
 	</body>
 </html>
+
+
 

@@ -1,0 +1,116 @@
+<div class="content-block" id="footer">
+				<div class="container">
+					<div class="row">
+							<div class="col-sm-2 blog-post">
+								
+								<!--<h2 class="footer-block">Have a question</h2>-->
+								<!--<p>Praesent lacinia dapibus, accumsan vesti bulum. Pellen tesque molestie mollis.</p>-->
+
+								<!--<p>Mauris nec ligula dui, fermentum nisl ut magna dolor, rhoncus wisi. In lacus sagittis luctus, nisl eros, sit amet tempor et, accumsan eget, pede. Suspendisse est. Ut rhoncus eu, pede. Vestibulum ante ipsum dolor lorem, iaculis mi. Pellentesque eu urna eget dolor. Duis luctus a, dolor. Duis ac sapien. -->
+								<!--</p>-->
+
+								<!--<p>Estibulum dapibus, maurimalesfames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus ultricies gravida vitae...</p>-->
+							</div>
+							
+							<div class="col-sm-8 blog-post">
+								
+								<h2 class="footer-block">メッセージを投稿する</h2>
+	
+		                        <!--<form action="contact-form.php" id="contactForm" method="post" name="contactform" class="" role="form">-->
+									
+								<%= form_for @post ,html: {id: "contactForm", class: "",} do |f| %>
+									<div class="form-group">
+										<%= f.label :"ニックネーム" %>
+    	                                <%= f.text_field :name,:class => 'form-control form-control-white', :id =>"name", :placeholder => "ニックネーム" %>
+								  	</div>
+								  	
+								    <div class="form-group">
+								    	<%= f.label :"応援メッセージ" %>
+    	                                <%= f.text_area :body,:class => 'form-control form-control-white', :id => "message", :placeholder => "応援メッセージ", :rows =>"8" ,:cols =>"40"%><br>
+								    </div>
+								    
+								    
+								    <div id="contactFormResponse"></div>
+								    <div class="form-group">
+								    	<%= f.submit "投稿",:class => 'text-center btn btn-o-white', :id=> "cfsubmit" %>
+								  	</div>
+								 <% end %>
+								 
+								 <!--</form>-->
+							</div>
+							
+							
+							<div class="col-sm-2 blog-post">
+								
+								
+								</div>
+								
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="content-block" id="portfolio">
+				<div class="container portfolio-sec">
+					<header class="block-heading cleafix">
+						<a href="#" class="btn btn-o btn-lg pull-right">View All</a>
+						<div class="title-page">
+							<p class="main-header">Our Latest Works </p>
+						    <p class="sub-header">Take a look at some of our recent products</p>
+					    </div>
+					</header>
+					<section class="block-body">
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/rain_1-320x240.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/min_icons_thumb1-320x240.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/flat_icons_thumb.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/wood-320x240.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/bike-320x240.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+							<div class="col-sm-4">
+								<a href="#" class="recent-work" style="background-image:url(/images/six_1-320x240.jpg)">
+									<span class="btn btn-o-white">Lorem Rocks</span>
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div><!-- #portfolio -->
+			
+			
+			
+			
+		    <div class="content-block parallax" id="parallax">
+				<div class="container">
+					<h3 class="call-action pull-left">In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis.</h3>
+					<a href="#" class="pull-right btn btn-o-white btn-lg">Get a free quote</a>
+				</div>
+			</div><!-- #parallax -->
+			
+			
+
+
+
+

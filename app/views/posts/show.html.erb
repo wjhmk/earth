@@ -1,0 +1,35 @@
+<!-- About us -->
+	        <div id="about" class="about-us">
+	            <div class="container about-sec">
+	                <header class="block-heading cleafix">
+							<div class="title-page">
+								<p class="main-header"><%= @post.name %>さん、メッセージありがとう！！</p>
+							    <p class="sub-header"><%= @post.name %>さんの思いが届きますように</p>
+							</div>
+						</header>
+	                <div class="divide50"></div>
+	                <div class="row">
+	                    
+	                    <div class="col-md-2 text-center">
+	                        
+	                    </div>
+	
+	                    <div class="col-md-8 text-center">
+	                        <div class="aboutus-item">
+	                            <i class="aboutus-icon fa fa-plane"></i>
+	                            
+	                            <h4 class="aboutus-title"><%= @post.name %>さんからの応援</h4>
+	                            <p class="aboutus-desc"><%= simple_format(@post.body) %></p>
+	                            <p class="aboutus-desc"><%= link_to "ホーム", root_path %></p>
+	                        </div>
+	                    </div>
+	                    
+	                    <div class="col-md-2 text-center">
+	                        
+	                    </div>
+
+	                </div>
+	            </div>
+	        </div>
+<!-- /About us -->
+

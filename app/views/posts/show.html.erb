@@ -20,6 +20,7 @@
 	                            
 	                            <h4 class="aboutus-title"><%= @post.name %>さんからの応援</h4>
 	                            <p class="aboutus-desc"><%= simple_format(@post.body) %></p>
+	                            <p class="aboutus-desc">from<%= @post.prefecture %></p>
 	                            <p class="aboutus-desc"><%= link_to "ホーム", root_path %></p>
 	                        </div>
 	                    </div>

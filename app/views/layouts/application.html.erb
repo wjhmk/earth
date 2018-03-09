@@ -76,18 +76,13 @@
 							      	<ul class="nav navbar-nav navbar-right">
 							      		
 							      		
-									           <li>
-										       <%= link_to(root_path) do %>
-											     <i class="fa fa-bookmark"></i>ホーム
-											   <% end %>
-										       </li>
-									           
-									  
-										       <li>
-										       <%= link_to(new_post_path) do %>
-											     <i class="fa fa-bookmark"></i>マイページ
-											   <% end %>
-										       </li>
+							      		       
+										       <i class="fa fa-bookmark"></i><%= link_to "ホーム",root_path %>
+										       <i class="fa fa-bookmark"></i><%= link_to "応援メッセージ投稿",new_post_path %>
+											     
+										       
+							      		
+									     
 											
 										
 							      	</ul>

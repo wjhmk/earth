@@ -317,7 +317,7 @@ h1.logo {
 }
 
 #header {
-  background-image: url(/images/header-bg.jpg);
+  background-image: url(/images/fre.jpg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
 }
 #services {
@@ -686,6 +686,10 @@ h2.footer-block {
 }
 button.navbar-toggle.collapsed {
   margin-top: 40px;
+}
+
+select#post_prefecture{
+  color: black;
 }
 
 

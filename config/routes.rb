@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   root to: "posts#index"
-  resources :posts, :only => [:new, :create, :destroy, :show]
+  resources :posts, :only => [:new, :create, :destroy, :show] 
+ 
   
   # get 'posts/index'
   # get 'posts/create'
